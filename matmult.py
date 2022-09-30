@@ -20,10 +20,14 @@ def mult_matrix(a, b):
 	return resMatrix
 			
 
-			
-				
+def euclidean_dist(a,b):
+	if len(a) != len(b):
+		return None
+	
+	sum=0
+	for i in range (len(a)):
+		sum+=(a[i]+b[i])**2
+	return (sum)**(1/2)
+
 
 	
-	
-def euclidean_dist(a,b):
-	return -1
