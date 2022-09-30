@@ -1,5 +1,9 @@
 def mult_scalar(matrix, scale):
-	return [[]]
+	resMatrix = matrix
+	for i in range (len(matrix)):
+		for j in range (len(matrix[i])):
+			resMatrix[i][j] *= scale
+	return resMatrix
 
 def mult_matrix(a, b):
 	return [[]]
