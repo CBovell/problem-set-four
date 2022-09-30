@@ -1,3 +1,7 @@
+#Venuja Perera
+#01/10/2022
+
+
 def mult_scalar(matrix, scale):
 	resMatrix = matrix
 	for i in range (len(matrix)):
