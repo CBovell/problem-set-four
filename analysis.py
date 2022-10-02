@@ -1,5 +1,6 @@
-
-
+#Venuja Perera
+#01/10/2022
+#A module with functions capable of reading a file and analysing its contents
 
 #Helper Functions
 def addCompliment(prev, curr):
@@ -43,6 +44,7 @@ def load(str):
         if (i == len(fileData)-1):#If its the last element in the file
             results['totalCount']+=1
             addCompliment(prevWord,currWord)
+    file.close()
     
 def countall():
     return results['totalCount']
@@ -69,10 +71,3 @@ def commonpair(str):
     if str not in results:
         return None
     return results[str]['maxComp']
-
-
-load('testfile2.txt')
-print(commonword(['apple','peach','pear','coconut','banana']))
-
-
-
