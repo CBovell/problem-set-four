@@ -71,3 +71,4 @@ def commonpair(str):
     if str not in results:
         return None
     return results[str]['maxComp']
+    
