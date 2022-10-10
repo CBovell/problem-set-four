@@ -65,6 +65,10 @@ def commonword(list):
             resArray[1] = [x]
         elif results[x]['frequency'] == resArray[0]:
             resArray[1].append(x)
+
+    if resArray[0] == 0:
+        return None
+
     return resArray
 
 def commonpair(str):
