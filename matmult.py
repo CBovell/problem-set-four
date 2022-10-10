@@ -1,6 +1,5 @@
 #Venuja Perera
 #01/10/2022
-#A Modue
 
 def mult_scalar(matrix, scale):
 	resMatrix = matrix
@@ -21,7 +20,7 @@ def mult_matrix(a, b):
 		for j in range (len(a)):#For each row in matrix a
 			currSum=0
 			for k in range (len(a[0])):#For each element in row j
-				currSum+=a[j][k]*b[k][i]#Multiply the element in j row of 'a' by the corrasponding value in i column of 'b' and add it to currSum
+				currSum+=a[j][k]*b[k][i]#Multiply the element in j row of 'a' by the corresponding value in i column of 'b' and add it to currSum
 			resMatrix[j].append(currSum)#add currSum to the result Matrix
 	return resMatrix
 			
